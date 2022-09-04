@@ -63,6 +63,7 @@ def janela_login():
                 if count[0]==1:
                     mensagem_alerta('Sucesso!', 'Login realizado com sucesso')
                     janela_login.destroy()
+                    os.system("python controle.py")
                 else:
                     mensagem_alerta('Erro', 'Usuário ou Senha incorreto!')
             else:
